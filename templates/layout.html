@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>My Flask Practice</title>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <style>
+         body{
+            background-color: rgb(107, 190, 128);
+         }
+         #container{
+            margin:auto;
+            width: 55%;
+            border: 1px solid green;
+            padding:20px;
+         }
+         header{
+            text-align: center;
+            background-color: blueviolet;
+            padding: 10px;
+            border: 1px solid ;
+         }
+      </style>
+   </head>
+   <body>
+      <div id='container'>
+         <header>
+            <h1> 
+               {% block title %}
+      
+               {% endblock %}
+            </h1>
+
+         </header>
+             
+         {% block body %} 
+   
+         {% endblock %}
+
+      </div>
+      
+
+   </body>
+</html>
+
